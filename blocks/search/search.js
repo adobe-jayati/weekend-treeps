@@ -1,4 +1,4 @@
-import {decorateIcons} from '../../scripts/aem.js';
+import { decorateIcons } from '../../scripts/aem.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -8,8 +8,8 @@ function clearSearch() {
     url.search = '';
     searchParams.delete('q');
     window.history.replaceState({}, '', url.toString());
-    let x = document.getElementById('search');
-    x.value = '';
+    const searchInputValue = document.getElementById('search');
+    searchInputValue.value = '';
   }
 }
 
@@ -47,8 +47,8 @@ function searchInput(block) {
 
   input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-        handleSearch(e, block);
-      }
+      handleSearch(e, block);
+    }
   });
 
   input.addEventListener('keyup', (e) => { if (e.code === 'Escape') { clearSearch(block); } });

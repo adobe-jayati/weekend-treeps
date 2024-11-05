@@ -103,20 +103,6 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
-
-function scrollFunction() {
-  // console.log("asdfghjkl", document.getElementById("nav"))
-  if (document.body.scrollTop > 50) {
-    console.log("asdfghjkl 1", document.getElementById("nav"));
-    // document.getElementById("nav").style.paddingBottom = "30px";
-    // document.getElementById("nav").style.paddingTop = "10px"
-  } else {
-    console.log("asdfghjkl 2", document.getElementById("nav"), document)
-    // document.getElementById("nav").style.paddingBottom = "100px";
-    // document.getElementById("nav").style.paddingTop = "100px"
-  }
-}
-
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -178,7 +164,6 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
-
   // top black header
   const headerTop = document.createElement('div');
   const navbar = document.querySelector('.nav-wrapper');
@@ -190,12 +175,12 @@ export default async function decorate(block) {
   const topHeader = document.querySelector('.top-header');
 
   const signIn = document.createElement('a');
-  signIn.href = "https://main--weekend-treeps--adobe-jayati.aem.live/registration";
+  signIn.href = 'https://main--weekend-treeps--adobe-jayati.aem.live/registration';
   signIn.textContent = 'SIGN IN';
   const flag = document.createElement('img');
-  flag.src = '/images/US.png'; 
+  flag.src = '/images/US.png';
   const lang = document.createElement('span');
-  lang.textContent = 'EN-US ˅'; 
+  lang.textContent = 'EN-US ˅';
 
   topHeader.appendChild(signIn);
   topHeader.appendChild(flag);
@@ -204,9 +189,9 @@ export default async function decorate(block) {
   // scrolling the page
   const scrollToggle = () => {
     if (window.scrollY > 50) { // Change 50 to your desired scroll threshold
-        document.body.classList.add('scrolled');
+      document.body.classList.add('scrolled');
     } else {
-        document.body.classList.remove('scrolled');
+      document.body.classList.remove('scrolled');
     }
   };
 
@@ -229,16 +214,15 @@ export default async function decorate(block) {
   const wrapper = document.querySelector('.nav-tools .default-content-wrapper');
   wrapper.appendChild(searchContainer);
 
-
   // highlighting nav header
   const currentPath = window.location.pathname;
 
   const navItems = document.querySelectorAll('.nav-sections li');
 
-  navItems.forEach(item => {
-      const link = item.querySelector('a');
-      if (link && link.getAttribute('href') === currentPath) {
-          item.classList.add('active');
-      }
+  navItems.forEach((item) => {
+    const link = item.querySelector('a');
+    if (link && link.getAttribute('href') === currentPath) {
+      item.classList.add('active');
+    }
   });
 }
