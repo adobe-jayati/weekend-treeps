@@ -179,6 +179,7 @@ export default async function decorate(block) {
   signIn.textContent = 'SIGN IN';
   const flag = document.createElement('img');
   flag.src = '/images/US.png';
+  flag.alt = 'US flag';
   const lang = document.createElement('span');
   lang.textContent = 'EN-US ˅';
 
