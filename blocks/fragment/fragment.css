@@ -13,6 +13,12 @@
     height: 31.875rem;
 }
 
+@media (width < 900px) {
+    .fragment-wrapper .columns-container .teaser > div {
+        height: 100%;
+    }
+}
+
 .fragment-wrapper .columns-container .teaser > div .columns-img-col {
     flex: 2 1 0;
     height: 100%;
@@ -176,4 +182,17 @@ main .about-us-container {
 
 #climbing-new-zealand {
     font-weight: 100;
+}
+
+
+#all-trips  {
+    margin-top: 50px;
+}
+
+#all-trips > a {
+    padding: 1rem 2rem;
+    background-color: #ffea00;
+    color: var(--dark-color);
+    font-size: 12px;
+    font-weight: 600;
 }
