@@ -1,0 +1,12 @@
+body > main > div.section.magazine-container {
+    margin-left: 30px;
+    margin-right: 30px; 
+}
+
+#articles {
+    border-bottom: 2px solid #ffea00;
+    content: "";
+    display: block;
+    padding-top: 8px;
+    width: 84px;
+}
