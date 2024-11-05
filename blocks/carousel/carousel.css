@@ -183,6 +183,7 @@
     margin: 0;
     max-width: 1260px;
     margin-top: 150px;
+    display: contents;
   }
 
   .next-adventure {
