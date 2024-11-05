@@ -8,10 +8,9 @@
 }
 
 .cards > ul > li {
-  /* border: 1px solid #dadada; */
   background-color: var(--background-color);
 }
- /* div.cards-card-body > p.button-container > strong > a */
+
 .cards .cards-card-body .button-container > strong > a {
   text-decoration: none;
   background-color: var(--background-color);
@@ -34,10 +33,6 @@
   margin: 0;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -46,6 +41,15 @@
 
 .cards-container {
   /* margin-top: 60px; */
+}
+
+.cards-card-body > p > a > picture > img {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
 body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards-card-image > picture > img {
@@ -59,7 +63,6 @@ body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards
   font-size: 12px;
   font-weight: 600;
   color: dimgray;
-  /* font-size: var(--body-font-size-xs); */
   line-height: 1.5;
   font-family: var(--body-font-family);
 }
@@ -69,10 +72,11 @@ body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards
   font-weight: 400;
 }
 
-.cards-card-image {
+.cards .cards-card-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 0;
 }
 
 .contributors .cards-card-body {
@@ -95,7 +99,6 @@ body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards
 .contributors .cards-card-body p {
   margin-top: 30px;
   width: 144px;
-  /* height: 38px; */
   display: flex;
   justify-content: space-between;
   background: black;
@@ -104,17 +107,7 @@ body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards
 .guides-container .cards-card-body p {
   margin-top: 30px;
   width: 144px;
-  /* height: 38px; */
   display: flex;
   justify-content: space-between;
   background: black;
-}
-
-.cards-card-body > p > a > picture > img {
-  background-color: black;
-  height: 25px;
-  width: 25px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
 }

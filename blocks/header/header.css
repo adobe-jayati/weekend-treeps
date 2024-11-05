@@ -19,7 +19,7 @@ header nav {
   max-width: 1248px;
   height: var(--nav-height);
   padding: 0 24px;
-  font-family: var(--fontFamilySansSerif);
+  font-family: var(--font-family-sansserif);
 }
 
 header nav[aria-expanded='true'] {
@@ -36,8 +36,6 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    /* max-width: 1264px;
-    padding: 0 32px; */
     max-width: 873pt;
     padding: 0 14px
   }
@@ -51,6 +49,11 @@ header nav[aria-expanded='true'] {
 header nav p {
   margin: 0;
   line-height: 1;
+}
+
+.top-header > a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header nav a:any-link {
@@ -138,6 +141,11 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
     display: none;
     visibility: hidden;
   }
+}
+
+.top-header img{
+  width:20px;
+  margin: 0 10px 0 20px;
 }
 
 /* brand */
@@ -241,7 +249,6 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li > a {
     text-decoration: none;
-    /* padding: 15px 17px; */
   }
   
   header nav .nav-sections .default-content-wrapper > ul > li > a:hover {
@@ -299,15 +306,15 @@ header .heading-custom {
 .scrolled .nav-wrapper{
   padding-top: 10px;
   padding-bottom: 10px;
-}
 
-.scrolled .nav-wrapper{
-  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-  -webkit-transition: padding-bottom .5s ease, padding-top .5s;
-  -webkit-transition: padding-bottom .5s ease-out, padding-top .5s ease ease-out .25s;
+  /* -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26); */
+  box-shadow: 0 8px 20px 0 #000;
+
+  /* -webkit-transition: padding-bottom .5s ease, padding-top .5s;
+  -webkit-transition: padding-bottom .5s ease-out, padding-top .5s ease ease-out .25s; */
   transition: padding-bottom .5s ease-out, padding-top .5s ease ease-out .25s;
 }
+
 .top-header{
   background-color: #202020;
   color: #f7f7f7;
@@ -315,22 +322,14 @@ header .heading-custom {
   padding: 3px 200px 3px 3px;
   text-align: right;
 }
+
 .top-header span{
   margin-right: 10px;
-}
-.top-header img{
-  width:20px;
-  margin: 0px 10px 0px 20px;
 }
 
 .nav-sections ul li:hover, .nav-sections ul li.active{
   background-color: #ffea00;
   text-decoration: none;
-}
-
-.top-header > a {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .top-header > a:hover {
@@ -346,7 +345,7 @@ header .heading-custom {
 }
 
 #register-yourself::after { 
-  border-bottom: 2px solid var(--brandPrimary, #ffea00);
+  border-bottom: 2px solid #ffea00;
   content: "";
   display: block;
   padding-top: 8px;

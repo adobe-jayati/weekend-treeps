@@ -5,6 +5,10 @@
     min-height: 31.875rem;
 }
 
+.columns > div{
+    gap: 0;
+}
+
 .fragment-wrapper .columns-container .teaser > div {
     height: 31.875rem;
 }
@@ -18,6 +22,7 @@
     display: flex;
     height: 100%;
 }
+
 .fragment-wrapper .columns-container .teaser > div .columns-img-col > picture > img {
     object-fit: cover;
 }
@@ -29,14 +34,13 @@
 .fragment-wrapper .columns-container .teaser > div > div #featured-article {
     font-size: 16px;
     font-weight: 600;
-    /* font-family: "Asar", Georgia, "Times New Roman", Times, serif; */
     margin-bottom: 14px;
     line-height: 2.5;
 }
 
 .fragment-wrapper .columns-container .teaser > div > div #camping-in-western-australia {
     font-weight: 100;
-    font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
     padding: 8px 0;
     line-height: 1.5;
 }
@@ -55,14 +59,10 @@
     border-radius: 0;
 }
 
-.columns > div{
-    gap: 0;
-}
-
 /* magazine */
 .fragment-container .default-content-wrapper #magazine {
     font-size: 40px;
-    font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
     font-weight: normal;
     padding-bottom: 13.5px;
     padding-top: 27px;
@@ -73,27 +73,30 @@
 }
 
 #recent-articles, #next-adventures {
-    font-family: "Asar", Georgia, Times New Roman, Times, serif;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
     font-size: 36px;
 }
 
 #recent-articles::after {
-    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    border-bottom: 2px solid #ffea00;
     content: "";
     display: block;
     padding-top: 8px;
     width: 84px;
 }
+
 #next-adventures {
     margin: 0 50px;
 }
+
 #next-adventures::after {
-    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    border-bottom: 2px solid #ffea00;
     content: "";
     display: block;
     padding-top: 8px;
     width: 84px;
 }
+
 .adventure-section.fragment-container.carousel-container > div.fragment-wrapper {
     margin-top: 15px;
 }
@@ -101,6 +104,7 @@
 #all-articles {
     margin-top: 50px;
 }
+
 #all-articles > a {
     color: var(--dark-color);
     text-transform: uppercase;
@@ -115,7 +119,7 @@
 }
 
 #members-only::after {
-    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    border-bottom: 2px solid #ffea00;
     content: "";
     display: block;
     padding-top: 8px;
@@ -123,7 +127,7 @@
 }
 
 #all-articles::after {
-    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    border-bottom: 2px solid #ffea00;
     content: "";
     display: block;
     padding-top: 8px;
@@ -139,12 +143,12 @@ body > main > div.section.fragment-container.cards-container {
 
 /* about us */
 #about-us {
-    font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
     font-weight: 100;
 }
 
 .about-us-container h1,h2,h6{
-    font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
     font-weight: 100;
 }
 
@@ -153,7 +157,7 @@ body > main > div.section.fragment-container.cards-container {
 }
 
 main .about-us-container h2::after {
-    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    border-bottom: 2px solid #ffea00;
     content: "";
     display: block;
     padding-top: 8px;
