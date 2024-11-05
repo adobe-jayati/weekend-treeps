@@ -1,0 +1,27 @@
+
+.social-links-wrapper .social-links .social-links-box > a {
+    background-color: var(--light-color);
+    padding: 10px;
+    margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-wrapper .social-links .social-links-box > a .social-links-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#footer-div .social-links .fragment-wrapper .social-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (width <= 750px) {
+    #footer-div .social-links .fragment-wrapper .social-links {
+        flex-direction: column;
+    }
+  }
+  

@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   font-size: var(--body-font-size-xs);
 }
 
@@ -7,14 +7,140 @@ footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
+  background-color: var(--dark-color);
 }
 
 footer .footer p {
+  margin-bottom: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer p > a {
   margin: 0;
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 10px 50px 24px;
   }
+}
+
+footer .footertext {
+  font-size: 9pt;
+}
+/* body > footer > div > div > div:nth-child(1) > div > p */
+footer .footer .section .default-content-wrapper .button-container{
+  background-color: var(--dark-color);
+  display: inline;
+}
+
+footer .footer .section .default-content-wrapper .button-container > a{
+  background-color: transparent;
+  color: var(--light-color);
+  display: inline-block;
+  font-size: 30px;
+  padding: 0;
+  word-wrap: break-word;
+  max-width: 135px;
+  border-radius: 0;
+  white-space: normal;
+}
+
+footer .footer {
+  padding: 10px 50px 24px;
+}
+
+#footer-div .footer-nav {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (width <= 750px) {
+  #footer-div .footer-nav  {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #footer-div .footer-nav .default-content-wrapper #weekend-treeps {
+    font-size: 25px;
+    width: 350px;
+    max-width: 350px;
+  }
+
+  #footer-div .footer-nav .default-content-wrapper > ul > li {
+    margin-bottom: 1rem;
+  }
+}
+
+
+#footer-div .footer-nav .default-content-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 50px;
+  align-items: center;
+}
+
+/* #follow-us */
+
+#footer-div .footer-nav .default-content-wrapper #follow-us {
+  color: var(--light-color);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#footer-div .footer-nav .default-content-wrapper #weekend-treeps{
+  font-size: 30px;
+  margin: 0;
+  max-width: 150px;
+}
+
+a:any-link {
+  color: var(--light-color);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+
+#footer-div .footer-nav .default-content-wrapper > ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--body-font-size-s, 14px);
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  
+}
+
+
+#footer-div .footer-nav .default-content-wrapper > ul > li {
+  font-weight: 500;
+}
+
+#footer-div .footer-nav .default-content-wrapper > ul > li > a {
+  text-transform: uppercase;
+  padding: 15px 17px;
+}
+
+#footer-div .footer-nav .default-content-wrapper > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+#footer-div .footer-nav .fragment-wrapper > div > div > p  {
+  background-color: var(--light-color);
+  min-width: 150px;
+  justify-content: space-between;
+  display: flex;
+}
+
+#footer-div .footer-nav .fragment-wrapper > div > div > p > a > picture > img {
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
 }

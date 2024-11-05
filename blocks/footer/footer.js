@@ -13,8 +13,29 @@ export default async function decorate(block) {
 
   // decorate footer DOM
   block.textContent = '';
-  const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  const footerDiv = document.createElement('footer-div');
 
-  block.append(footer);
+  footerDiv.id = 'footer-div';
+  while (fragment.firstElementChild) footerDiv.append(fragment.firstElementChild);
+  
+  let classes = ['nav', 'content'];
+  classes.forEach((c, i) => {
+    const section = footerDiv.children[i];
+    if (section) section.classList.add(`footer-${c}`);
+  });
+
+  const currentPath = window.location.pathname;
+  console.log("currentPath", currentPath);
+
+  const navItems = document.querySelectorAll('.nav-sections li');
+  console.log("currentPath", navItems);
+
+  navItems.forEach(item => {
+      const link = item.querySelector('a');
+      if (link && link.getAttribute('href') === currentPath) {
+          item.classList.add('active');
+      }
+  });
+
+  block.append(footerDiv);
 }
