@@ -163,4 +163,66 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // top black header
+  const headerTop = document.createElement('div');
+  const navbar = document.querySelector('.nav-wrapper');
+
+  navbar.parentNode.insertBefore(headerTop, navbar);
+
+  const topheader = document.querySelector('.header > div');
+  topheader.classList.add('top-header');
+  const topHeader = document.querySelector('.top-header');
+
+  const signIn = document.createElement('a');
+  signIn.href = 'https://main--weekend-treeps--adobe-jayati.aem.live/registration';
+  signIn.textContent = 'SIGN IN';
+  const flag = document.createElement('img');
+  flag.src = '/images/US.png';
+  const lang = document.createElement('span');
+  lang.textContent = 'EN-US ˅';
+
+  topHeader.appendChild(signIn);
+  topHeader.appendChild(flag);
+  topHeader.appendChild(lang);
+
+  // scrolling the page
+  const scrollToggle = () => {
+    if (window.scrollY > 50) { // Change 50 to your desired scroll threshold
+      document.body.classList.add('scrolled');
+    } else {
+      document.body.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', scrollToggle);
+
+  // Search element
+  const searchContainer = document.createElement('div');
+  searchContainer.className = 'search-container';
+  const searchInput = document.createElement('input');
+  searchInput.type = 'text';
+  searchInput.placeholder = 'SEARCH';
+  searchInput.setAttribute('aria-label', 'Search');
+  const searchIcon = document.createElement('span');
+  searchIcon.className = 'icon icon-search';
+  searchIcon.innerHTML = '<i class="fas fa-search"></i>';
+
+  searchContainer.appendChild(searchIcon);
+  searchContainer.appendChild(searchInput);
+
+  const wrapper = document.querySelector('.nav-tools .default-content-wrapper');
+  wrapper.appendChild(searchContainer);
+
+  // highlighting nav header
+  const currentPath = window.location.pathname;
+
+  const navItems = document.querySelectorAll('.nav-sections li');
+
+  navItems.forEach((item) => {
+    const link = item.querySelector('a');
+    if (link && link.getAttribute('href') === currentPath) {
+      item.classList.add('active');
+    }
+  });
 }

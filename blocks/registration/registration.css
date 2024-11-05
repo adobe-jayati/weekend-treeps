@@ -1,0 +1,43 @@
+#registration-form{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label{
+  display: block;
+}
+
+form{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 26px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+form input, form textarea{
+  width: 100%;
+  border-bottom: 2px solid #999;
+  margin-bottom: 26px;
+  padding: 6px 0 6px 4px;
+  border-radius: 0;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+form input:focus-visible, form textarea:focus-visible{
+  outline: 0;
+}
+
+form button{
+  background-color: #ffea00;
+  color: var(--dark-color);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 15px 30px;
+}

@@ -8,20 +8,106 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards .cards-card-body .button-container > strong > a {
+  text-decoration: none;
+  background-color: var(--background-color);
+  color: var(--dark-color);
+  text-transform: uppercase;
+  padding: 0;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0.8em;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .cards-card-body p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: dimgray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards-container {
+  /* margin-top: 60px; */
+}
+
+.cards-card-body > p > a > picture > img {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+body > main > div > div.fragment-wrapper > div > div > div > ul > li > div.cards-card-image > picture > img {
+  border-radius: 50%;
+  height: 164px;
+  width: 164px;
+}
+
+.cards-card-body > h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: dimgray;
+  line-height: 1.5;
+  font-family: var(--body-font-family);
+}
+
+.cards-card-body > h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cards .cards-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.contributors .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guides-container .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-card-body > p > a > picture {
+  background-color: black;
+  margin-top: 30px;
+}
+
+.contributors .cards-card-body p {
+  margin-top: 30px;
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.guides-container .cards-card-body p {
+  margin-top: 30px;
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  background: black;
 }

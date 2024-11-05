@@ -23,11 +23,244 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
   }
+}
+
+.columns-container .columns-wrapper .teaser > div .columns-img-col {
+  flex: 2 1 0;
+}
+
+.columns-container .columns-wrapper .faq-top-section > div {
+  gap: 60px;
+  align-items: start;
+}
+
+.columns-container > div > div > div:nth-child(2) > div:nth-child(2){
+  align-self: flex-start;
+}
+
+.columns-container > div > div > div:nth-child(2) > div:nth-child(1){
+  flex: 3;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(1) > div.columns-img-col {
+  flex: 0 0 100%;
+}
+
+#share-this-story {
+  color: #202020;
+  font-family: var(--font-family-sansserif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > h1 {
+  color: #202020;
+  font-family: var(--font-family-sansserif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 13.5px;
+  margin-top: 27px;
+  line-height: 2;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > h2::after  {
+  border-bottom: 2px solid #ffea00;
+  content: "";
+  display: block;
+  padding-top: 8px;
+  margin-bottom: 12px;
+  width: 84px;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > h4 {
+  color: #202020;
+  font-family: var(--font-family-sansserif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--body-font-size-s);
+  margin: 20px 0;
+  line-height: 2;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > p {
+  font-family: var(--font-family-sansserif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 18px;
+  line-height: 2.5;
+  color: var(--dark-color, #202020);
+  text-align: left;
+  margin: 0 0 13.5px;
+
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > hr {
+  height: 1px;
+  content: " ";
+  background-color: #ebebeb;
+  border: none;
+  margin: 4rem auto !important;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) {
+  padding-top: 40px;
+  gap: 60px;
+}
+
+.columns-container .columns-wrapper .articles  {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > h5 {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table  img{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table  tr{
+  display: flex;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table  h4 {
+  font-family: var(--font-family-sansserif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-size: 20px;
+  margin-bottom: .25rem;
+  margin-left: 25px;
+  margin-top: 0;
+  padding-top: .5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table  h5 {
+  font-family: var(--body-font-family);
+  color: dimgray;
+  font-size: 14px;
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table  td:nth-child(2){
+  flex: 2;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(1) > table td:last-child{
+  display: flex;
+  flex: 1;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p {
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid #ebebeb;
+  height: 90pt;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p:hover {
+  background: #ffea00;
+  border-color: #202020;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p > a {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p > a:first-child {
+  font-size: 18px;
+  color: var(--background-color-hf);
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p > a:last-child {
+  font-size: 12px;
+    color: dimgray;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  margin-top: 70px;
+}
+
+#download-pdf {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.columns-container .columns-wrapper .articles  div:nth-child(2) > h6 {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: dimgray;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#download-pdf-1 {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+#download-pdf-1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #202020;
+  color: #fff;
+  padding: 15px 30px;
+  max-width: fit-content;
+  line-height: normal;
+}
+
+main .columns-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+main .columns-container .accordion-wrapper {
+  margin: 40px 0;
+}
+
+#faqs {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  scroll-margin: 40px;
+}
+
+#faqs::after {
+  border-bottom: 2px solid #ffea00;
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
+main > .columns-container .columns-wrapper .faq-top-section > div > div:nth-child(1) {
+  flex: 3;
 }
