@@ -2,9 +2,15 @@
 function createSocialLinksBox(block) {
   const box = document.createElement('div');
   const socialLinks = [
-    { icon: 'Facebook Icon', src: '/icons/dark_fb.svg', url: '#facebookwknd' },
-    { icon: 'Twitter Icon', src: '/icons/dark_twitter.svg', url: '#twitterwknd' },
-    { icon: 'Instagram Icon', src: '/icons/dark_insta.svg', url: '#instawknd' },
+    {
+      icon: 'Facebook Icon', src: '/icons/dark_fb.svg', url: '#facebookwknd', alt: 'Facebook Icon',
+    },
+    {
+      icon: 'Twitter Icon', src: '/icons/dark_twitter.svg', url: '#twitterwknd', alt: 'Twitter Icon',
+    },
+    {
+      icon: 'Instagram Icon', src: '/icons/dark_insta.svg', url: '#instawknd', alt: 'Instagram Icon',
+    },
   ];
   box.classList.add('social-links-box');
   socialLinks.forEach((link) => {
@@ -16,6 +22,7 @@ function createSocialLinksBox(block) {
     anchor.href = link.url;
     anchor.title = link.icon;
     img.src = link.src;
+    img.alt = link.alt;
 
     span.appendChild(img);
     anchor.appendChild(span);
