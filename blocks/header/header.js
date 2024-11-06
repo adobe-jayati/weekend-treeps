@@ -181,7 +181,7 @@ export default async function decorate(block) {
   flag.src = '/images/US.png';
   flag.alt = 'US flag';
   const lang = document.createElement('span');
-  lang.textContent = 'EN-US ˅';
+  lang.textContent = 'EN-US';
 
   topHeader.appendChild(signIn);
   topHeader.appendChild(flag);
